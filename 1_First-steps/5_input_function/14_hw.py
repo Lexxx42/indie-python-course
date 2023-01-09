@@ -31,12 +31,12 @@
 # Выведите максимальное значение выражения, которое можно получить.
 
 a, b, c = (int(input()) for _ in range(3))
-if 1 in (a, b, c):
-    if a == b == c:
-        print(a + b + c)
-    else:
-        print((max_1 := max(a, b, c)) * (a + b + c - max_1))
-else:
-    print(a * b * c)
+# if 1 in (a, b, c):
+#     if a == b == c:
+#         print(a + b + c)
+#     else:
+#         print((max_1 := max(a, b, c)) * (a + b + c - max_1))
+# else:
+#     print(a * b * c)
 
-# print(max(a*b*c, a+b+c, (a+b)*c, a*(b+c)))
+print(max(a + b + c, a * b * c,(max_1 := max(a, b, c)) * (a + b + c - max_1)))
