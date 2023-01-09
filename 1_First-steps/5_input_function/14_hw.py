@@ -31,4 +31,4 @@
 # Выведите максимальное значение выражения, которое можно получить.
 
 a, b, c = (int(input()) for _ in range(3))
-print(max(a + b + c, a * b * c,(max_1 := max(a, b, c)) * (a + b + c - max_1)))
+print(max(a + b + c, a * b * c, (max_1 := max(a, b, c)) * (a + b + c - max_1)))
