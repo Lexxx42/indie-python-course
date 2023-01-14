@@ -1,1 +1,1 @@
-# indie-course-of-python
+# indie-python-course
