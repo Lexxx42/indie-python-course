@@ -11,4 +11,16 @@
 #
 # True
 
-print((lambda *args: args % 7 ==0)(*map(int, input().split())))
+# print((lambda x, y: x % 7 == y % 7)(*map(int, input().split())))
+
+# print(all([not int(i) % 7 for i in a]))
+
+#print(sum([int(i) % 7 for i in input().split()]) == 0)
+
+# print(sum(map(lambda x: int(x) % 7, input().split())) == 0)
+
+print(all(map(lambda x: int(x) % 7 == 0, input().split())))
+
+
+
+
