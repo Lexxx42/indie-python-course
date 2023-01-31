@@ -17,7 +17,6 @@
 #
 # False
 
-print((lambda x, y, z: x==y==z)(*input().split()))
+print((lambda x, y, z: x == y == z)(*input().split()))
 
 # print(len(set(input().split())) == 1)
-
