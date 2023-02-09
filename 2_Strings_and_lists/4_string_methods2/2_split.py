@@ -67,3 +67,5 @@ print('a b C d e'.split(maxsplit=3))
 # Sample Output 3:
 
 # 4
+
+print(len(input().split()))
