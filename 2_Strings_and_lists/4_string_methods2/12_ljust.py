@@ -34,7 +34,7 @@ print(d.ljust(5, '!'))
 # fillchar до указанной длины width.
 # Если параметр width меньше длины строки, то будет возвращена исходная строка без изменений:
 
-print('rjust')
+print('\nrjust')
 d = 'qwerty'
 print(d.rjust(10))
 print(d.rjust(10, '-'))
@@ -50,7 +50,7 @@ print(d.rjust(5, '!'))
 # а справа и слева от нее находятся символы fillchar.
 # Если параметр width меньше длины строки, то будет возвращена исходная строка без изменений.
 
-print('center')
+print('\ncenter')
 d = 'qwerty'
 print(d.center(10))
 print(d.center(12, '!'))
@@ -68,7 +68,7 @@ print(d.center(5, '!'))
 # Метод .zfill возвращает новую строку, в которой исходная строка S дополнена нулями слева так,
 # чтобы длина новой строки стала равна width.
 
-print('zfill')
+print('\nzfill')
 d = '123'
 print(d.zfill(5))
 print(d.zfill(6))
