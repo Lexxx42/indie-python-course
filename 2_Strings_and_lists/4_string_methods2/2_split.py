@@ -67,5 +67,9 @@ print('a b C d e'.split(maxsplit=3))
 # Sample Output 3:
 
 # 4
+import os
+import sys
 
 print(len(input().split()))
+print(os.path.basename(sys.argv[0]))
+print(__file__)
