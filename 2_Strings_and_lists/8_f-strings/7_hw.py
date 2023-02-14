@@ -27,5 +27,5 @@
 # 25 // 5 = 5
 # 25 % 5 = 0
 
-print(f'{(a := int(input()))} / {(b := int(input()))} = {a / b}\n{a} // {b} = {a // b}\n{a} % {b} = {a % b}')
+# print(f'{(a := int(input()))} / {(b := int(input()))} = {a / b}\n{a} // {b} = {a // b}\n{a} % {b} = {a % b}')
 print((lambda x, y: f'{x} / {y} = {x / y}\n{x} // {y} = {x // y}\n{x} % {y} = {x % y}')(int(input()), int(input())))
