@@ -44,7 +44,12 @@
 
 # 4
 
-numbers = []
+# numbers = []
+# while (num := int(input())) != 0:
+#     numbers.append(num)
+# print(sum(numbers))
+
+answer = 0
 while (num := int(input())) != 0:
-    numbers.append(num)
-print(sum(numbers))
+    answer += num
+print(answer)
