@@ -61,11 +61,13 @@
 
 # кол-во кубиков 1->2->3->4
 
-h = 1
-n = int(input())
-if n == 1:
-    print(1)
-else:
-    while h * (h + 1) * (h + 2) / 6 < n:
-        h += 1
-    print(h - 1)
+n_cubes, i, n_next_row = int(input()), 1, 0
+while n_cubes >= (n_next_row := i + n_next_row):
+    n_cubes -= n_next_row
+    i += 1
+print(i - 1)
+
+# n, h, row = int(input()), 1, 1
+# while n >= row:
+#     n, row, h = n - row, row + h + 1, h + 1
+# print(h - 1)
