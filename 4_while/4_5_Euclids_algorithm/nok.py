@@ -13,8 +13,10 @@
 #
 # 42
 
-from math import gcd
+from math import gcd, lcm
 
 # НОК = ab / НОД(a, b)
-a,b = tuple(map(int, input().split()))
+a, b = tuple(map(int, input().split()))
 print(a * b // gcd(a, b))
+
+print(lcm(a, b))
