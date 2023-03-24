@@ -17,4 +17,4 @@ from math import gcd
 
 # НОК = ab / НОД(a, b)
 a,b = tuple(map(int, input().split()))
-print(int(a * b / gcd(a, b)))
+print(a * b // gcd(a, b))
