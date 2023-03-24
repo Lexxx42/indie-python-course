@@ -36,3 +36,11 @@ def get_all_divisors(n):
         yield calc_product(prime_exp_combination)
 
 print(sum(list(get_all_divisors(34))))
+
+
+# a=int(input())
+# i=1
+# while i<=a:
+#     if a%i==0:
+#         print(i, end=' ')
+#     i=i+1
