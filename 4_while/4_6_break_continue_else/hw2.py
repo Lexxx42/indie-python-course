@@ -39,7 +39,14 @@
 #     elif not i % 2 or not i % 3:
 #         continue
 #     print(i)
+a, b = int(input()), int(input())
 
-
-
+while a <= b:
+    if not a % 777:
+        break
+    elif not a % 2 or not a % 3:
+        a += 1
+        continue
+    print(a)
+    a += 1
 
