@@ -27,3 +27,6 @@ for x in range(int(input())):
 print(s)
 
 # print(sum(i for i in range(int(input())) if not i % 3 or not i % 5))
+
+# num = int(input())
+#  print(sum(range(3, num, 3)) + sum(range(5, num, 5)) - sum(range(15, num, 15)))
