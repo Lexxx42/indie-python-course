@@ -31,5 +31,8 @@
 #         recipe.append(s)
 # print(', '.join(recipe))
 
-s = [input() for i in range(int(input()))]
-print(*[i for i in s if not 'соль' in i], sep=', ')
+# s = [input() for i in range(int(input()))]
+# print(*[i for i in s if not 'соль' in i], sep=', ')
+
+
+print(*(s for s in (input() for _ in range(int(input()))) if not s.count('соль')), sep=', ')
