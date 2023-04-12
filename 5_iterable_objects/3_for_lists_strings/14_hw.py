@@ -36,26 +36,22 @@
 
 # {()}
 
-# (([]))
-
 input_string = input()
 
 for _ in range(len(input_string) // 2):
-    if len(input_string) % 2:
-        break
     open_br_index = input_string.find('(')
     if ')' in input_string[open_br_index:] and input_string.rfind(')') > open_br_index and (input_string.rfind(
             ')') - input_string.find('(')) % 2:
         input_string = input_string.replace('(', '', 1)
-        input_string = ''.join(input_string.rsplit(')', 1))
+        input_string = input_string.replace(')', '', 1)
     open_br_index = input_string.find('[')
     if ']' in input_string[open_br_index:] and input_string.rfind(']') > open_br_index and (input_string.rfind(
-            ']') - input_string.rfind('[')) % 2:
+            ']') - input_string.find('[')) % 2:
         input_string = input_string.replace('[', '', 1)
-        input_string = ''.join(input_string.rsplit(']', 1))
+        input_string = input_string.replace(']', '', 1)
     open_br_index = input_string.find('{')
     if '}' in input_string[open_br_index:] and input_string.rfind('}') > open_br_index and (input_string.rfind(
             '}') - input_string.find('{')) % 2:
         input_string = input_string.replace('{', '', 1)
-        input_string = ''.join(input_string.rsplit('}', 1))
+        input_string = input_string.replace('}', '', 1)
 print('YES' if not len(input_string) else 'NO')
