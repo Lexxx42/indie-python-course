@@ -29,13 +29,15 @@
 # 6 3
 # 1 5
 
-n, m = map(int, input().split())
-matrix = []
+# n, m = map(int, input().split())
+# matrix = []
+#
+# for i in range(n):
+#     matrix.append(input().split())
+#
+# for i in range(n):
+#     for j in range(m):
+#         print(matrix[~i][j], end=' ')
+#     print()
 
-for i in range(n):
-    matrix.append(input().split())
-
-for i in range(n):
-    for j in range(m):
-        print(matrix[~i][j], end=' ')
-    print()
+print(*[input() for _ in range(int(input().split()[0]))][::-1], sep='\n')
