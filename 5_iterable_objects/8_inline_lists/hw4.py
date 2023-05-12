@@ -53,6 +53,12 @@
 #
 # 3
 
+# n, m = map(int, input().split())
+# s = ['.' * (m + 2)] + ['.' + input() + '.' for _ in range(n)] + ['.' * (m + 2)]
+# print(sum(s[i][j] == s[i][j + 1] == s[i][j - 1] == s[i + 1][j] == s[i - 1][j] == '.'
+#     for i in range(1, n + 1) for j in range(1, m + 1)))
+
+
 n, m = map(int, input().split())
 counter = 0
 tmp = [['.'] * (m + 2)]
