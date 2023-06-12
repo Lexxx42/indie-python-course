@@ -27,3 +27,6 @@ if letters_s1 == letters_s2:
     print('YES')
 else:
     print('NO')
+
+# print('YES' if sorted(input()) == sorted(input()) else 'NO')
+
